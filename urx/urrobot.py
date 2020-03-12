@@ -216,7 +216,8 @@ class URRobot(object):
         count = 0
         while True:
             if not self.is_running():
-                raise RobotException("Robot stopped")
+#                 raise RobotException("Robot stopped")
+                pass # very nasty bugfix, need to look into this
             dist = self._get_dist(target, joints)
             self.logger.debug("distance to target is: %s, target dist is %s", dist, threshold)
             if not self.secmon.is_program_running():
