@@ -5,7 +5,7 @@ import logging
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARN)
 
-    rob = urx.Robot("192.168.1.100")
+    rob = urx.Robot("172.19.0.49")
     #rob = urx.Robot("localhost")
     rob.set_tcp((0,0,0,0,0,0))
     rob.set_payload(0.5, (0,0,0))
